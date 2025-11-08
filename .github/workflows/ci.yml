@@ -36,12 +36,12 @@ jobs:
         run: |
           tmpdir=$(mktemp -d)
           copier copy -r HEAD --force --trust --skip-tasks \
-            -d project_name="test" \
+            -d project_name="Test Project" \
             -d project_description="A test GitHub Action" \
-            -d project_slug="test" \
-            -d github_repository="test-user/test-action" \
+            -d project_slug="test-project" \
+            -d github_repository="acme/test-action" \
             . "$tmpdir"
-          echo "output_dir=$tmpdir" >> $GITHUB_OUTPUT
+          echo "output_dir=$tmpdir/test-project" >> $GITHUB_OUTPUT
 
       - name: Check generated files
         run: |
