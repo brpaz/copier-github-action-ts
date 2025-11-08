@@ -6,7 +6,7 @@
     "regexManagers": [
         {
             "fileMatch": [
-                "^{{project_slug}}/package\\.json\\.jinja$"
+                "^template/{{project_slug}}/package\\.json\\.jinja$"
             ],
             "matchStrings": [
                 "\\\"dependencies\\\"\\s*:\\s*\\{[\\s\\S]*?\\\"(?<depName>[@a-zA-Z0-9_./-]+)\\\"\\s*:\\s*\\\"(?<currentValue>[^\\\"]+)\\\"",
@@ -16,7 +16,7 @@
         },
         {
             "fileMatch": [
-                "^{{project_slug}}/\\.github/workflows/.*\\.ya?ml$"
+                "^template/{{project_slug}}/\\.github/workflows/.*\\.ya?ml$"
             ],
             "matchStrings": [
                 "uses:\\s*(?<depName>[a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+)@(?<currentValue>[a-zA-Z0-9_.-]+)"
@@ -25,7 +25,7 @@
         },
         {
             "fileMatch": [
-                "^{{project_slug}}/package\\.json\\.jinja$"
+                "^template/{{project_slug}}/package\\.json\\.jinja$"
             ],
             "matchStrings": [
                 "\\\"engines\\\"\\s*:\\s*\\{[\\s\\S]*?\\\"node\\\"\\s*:\\s*\\\"(?<currentValue>[^\\\"]+)\\\""
