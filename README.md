@@ -3,7 +3,7 @@
 <p class="center">
 
 [![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-purple.json)](https://github.com/copier-org/copier)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/brpaz/test-action/ci.yml?branch=main)](https://github.com/brpaz/test-action/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/brpaz/copier-github-action-ts/ci.yml?branch=main)](https://github.com/brpaz/copier-github-action-ts/actions)
 
 </p>
 
