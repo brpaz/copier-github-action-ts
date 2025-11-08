@@ -38,7 +38,6 @@ jobs:
           copier copy -r HEAD --force --trust --skip-tasks \
             -d project_name="Test Project" \
             -d project_description="A test GitHub Action" \
-            -d project_slug="test-project" \
             -d github_repository="acme/test-action" \
             . "$tmpdir"
           echo "output_dir=$tmpdir/test-project" >> $GITHUB_OUTPUT
