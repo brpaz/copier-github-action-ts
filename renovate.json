@@ -3,6 +3,37 @@
     "extends": [
         "config:recommended"
     ],
+    "regexManagers": [
+        {
+            "fileMatch": [
+                "^{{project_slug}}/package\\.json\\.jinja$"
+            ],
+            "matchStrings": [
+                "\\\"dependencies\\\"\\s*:\\s*\\{[\\s\\S]*?\\\"(?<depName>[@a-zA-Z0-9_./-]+)\\\"\\s*:\\s*\\\"(?<currentValue>[^\\\"]+)\\\"",
+                "\\\"devDependencies\\\"\\s*:\\s*\\{[\\s\\S]*?\\\"(?<depName>[@a-zA-Z0-9_./-]+)\\\"\\s*:\\s*\\\"(?<currentValue>[^\\\"]+)\\\""
+            ],
+            "datasourceTemplate": "npm"
+        },
+        {
+            "fileMatch": [
+                "^{{project_slug}}/\\.github/workflows/.*\\.ya?ml$"
+            ],
+            "matchStrings": [
+                "uses:\\s*(?<depName>[a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+)@(?<currentValue>[a-zA-Z0-9_.-]+)"
+            ],
+            "datasourceTemplate": "github-tags"
+        },
+        {
+            "fileMatch": [
+                "^{{project_slug}}/package\\.json\\.jinja$"
+            ],
+            "matchStrings": [
+                "\\\"engines\\\"\\s*:\\s*\\{[\\s\\S]*?\\\"node\\\"\\s*:\\s*\\\"(?<currentValue>[^\\\"]+)\\\""
+            ],
+            "depNameTemplate": "node",
+            "datasourceTemplate": "node"
+        }
+    ],
     "prHourlyLimit": 5,
     "prConcurrentLimit": 20,
     "labels": [

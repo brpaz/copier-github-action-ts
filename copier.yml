@@ -10,12 +10,8 @@ project_name:
 
 project_slug:
   type: str
-  help: The slug for your project. It will be used as directory name.
   default: "{{ project_name | lower | replace(' ', '-') }}"
-  validator: >-
-    {% if not (project_slug | regex_search('^[a-z][a-z0-9\-]+$')) %}
-    project_slug must start with a letter, followed one or more letters, digits or dashes all lowercase.
-    {% endif %}
+  when: false
 
 project_description:
   type: str

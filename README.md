@@ -1,9 +1,9 @@
 # GitHub Action TypeScript Template
 
-<p class="center">
+<p align="center">
 
-[![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-purple.json)](https://github.com/copier-org/copier)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/brpaz/copier-github-action-ts/ci.yml?branch=main)](https://github.com/brpaz/copier-github-action-ts/actions)
+[![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-black.json&style=for-the-badge)](https://github.com/copier-org/copier)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/brpaz/copier-github-action-ts/ci.yml?branch=main&style=for-the-badge)](https://github.com/brpaz/copier-github-action-ts/actions)
 
 </p>
 
