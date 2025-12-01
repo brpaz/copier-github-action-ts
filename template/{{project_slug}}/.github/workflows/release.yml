@@ -29,7 +29,7 @@ jobs:
         run: pnpm version --no-git-tag-version ${{ github.event.release.tag_name }}
 
       - name: Update Changelog
-        uses: stefanzweifel/changelog-updater-action@v1
+        uses: stefanzweifel/changelog-updater-action@v1.12.0
         with:
           latest-version: ${{ github.event.release.tag_name }}
           release-notes: ${{ github.event.release.body }}
